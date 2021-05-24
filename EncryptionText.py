@@ -4,7 +4,7 @@
 ###
 import random
 
-replaceTextGroup = {"0":["a","b","c","d"],"1":["e","f","g","h"],"2":["i","j","k","l"]," ":["m","n","o","p"]}#加解密所用规则组
+replaceTextGroup = {"0":["a","b","c","d"],"1":["e","f","g","h"]," ":["m","n","o","p"]}#加解密所用规则组
 
 def Encryption(text):#加密函数
     handleText_bin = ' '.join([bin(ord(c)).replace('0b', '') for c in text])#将传入文本处理成二进制形式
